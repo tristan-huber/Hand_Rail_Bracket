@@ -409,8 +409,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6901041666666667,
-      "y": 0.543978349120433,
+      "x": 0.5953776041666667,
+      "y": 0.6847090663058186,
       "uniqueID": "id-228",
       "name": "Steel_Tube_-_Square",
       "ioValues": [
@@ -872,6 +872,47 @@
       },
       "unitsKey": "Inches",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Move",
+      "x": 0.6868489583333334,
+      "y": 0.7009472259810555,
+      "uniqueID": "id-277",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 1,
+          "currentEquation": "1"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.8186848958333333,
+      "y": 0.5859269282814614,
+      "uniqueID": "id-283",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -954,6 +995,21 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-203",
       "ap2ID": "id-88"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-203",
+      "ap2ID": "id-283"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-228",
+      "ap2ID": "id-277"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-277",
+      "ap2ID": "id-283"
     }
   ],
   "unitsKey": "Inches",
