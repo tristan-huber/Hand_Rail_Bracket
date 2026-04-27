@@ -6,7 +6,7 @@
 
 ## Inputs
 
-- **Input** (number)
+- **Height** (number)
 
 
 

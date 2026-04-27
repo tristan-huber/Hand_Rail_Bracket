@@ -6,8 +6,9 @@
   "name": "Hand_Rail_Bracket",
   "ioValues": [
     {
-      "name": "Input",
-      "ioValue": 10
+      "name": "Height",
+      "ioValue": 4,
+      "currentEquation": "4"
     }
   ],
   "topLevel": true,
@@ -56,32 +57,6 @@
           "name": "height",
           "ioValue": 0.25,
           "currentEquation": "1/4"
-        }
-      ]
-    },
-    {
-      "atomType": "Rotate",
-      "x": 0.2666015625,
-      "y": 0.2408660351826793,
-      "uniqueID": "id-104",
-      "ioValues": [
-        {
-          "name": "geometry",
-          "ioValue": "__GEOMETRY_INPUT__"
-        },
-        {
-          "name": "x-axis degrees",
-          "ioValue": 90
-        },
-        {
-          "name": "y-axis degrees",
-          "ioValue": 0,
-          "currentEquation": "0"
-        },
-        {
-          "name": "z-axis degrees",
-          "ioValue": 0,
-          "currentEquation": "0"
         }
       ]
     },
@@ -227,7 +202,7 @@
         },
         {
           "name": "zDist",
-          "ioValue": 10,
+          "ioValue": 4,
           "currentEquation": "4"
         }
       ]
@@ -236,7 +211,8 @@
       "atomType": "Input",
       "x": 0.025384615384615384,
       "y": 0.7604871447902571,
-      "uniqueID": "id-160"
+      "uniqueID": "id-160",
+      "name": "Height"
     },
     {
       "atomType": "Rectangle",
@@ -251,9 +227,651 @@
         },
         {
           "name": "y length",
-          "ioValue": 10
+          "ioValue": 4
         }
       ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.23111979166666669,
+      "y": 0.21109607577807848,
+      "uniqueID": "id-177",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4013671875,
+      "y": 0.21921515561569688,
+      "uniqueID": "id-183",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 2
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0.25,
+          "currentEquation": "0.25"
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.11393229166666666,
+      "y": 0.058186738836265225,
+      "uniqueID": "id-189",
+      "name": "x / 2",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 4,
+          "currentEquation": "1"
+        }
+      ],
+      "currentEquation": "x / 2"
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4404296875,
+      "y": 0.37347767253044656,
+      "uniqueID": "id-193",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 0.25,
+          "currentEquation": "1/4"
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.587890625,
+      "y": 0.32205683355886333,
+      "uniqueID": "id-203",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "extrude-move-rotate-rectangle-3-4-0-0-0-0-2-0-{\"origin\":[0,-0.25,2.7755575615628914e-17],\"xDir\":[1,0,0],\"normal\":[0,-1,1.1102230246251565e-16]}-0.25",
+            "dimension": "3D",
+            "plane": {
+              "origin": [
+                0,
+                -0.25,
+                2.7755575615628914e-17
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                -1,
+                1.1102230246251565e-16
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "extrude-shrinkWrap-fuse-move-rectangle-1-1-0-1-0-rectangle-3-1-50-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.25",
+            "dimension": "3D",
+            "tags": [],
+            "color": "#aad7f2",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "bom": [
+              []
+            ]
+          }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": {
+            "geometry": "move-extrude-shrinkWrap-fuse-move-rectangle-1-1-0-1-0-rectangle-3-1-50-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.25-0-0-4",
+            "dimension": "3D",
+            "tags": [],
+            "color": "#aad7f2",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "bom": [
+              []
+            ]
+          }
+        }
+      ],
+      "unionType": "Fusion"
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.6901041666666667,
+      "y": 0.543978349120433,
+      "uniqueID": "id-228",
+      "name": "Steel_Tube_-_Square",
+      "ioValues": [
+        {
+          "name": "Width",
+          "ioValue": 1
+        },
+        {
+          "name": "Thickness",
+          "ioValue": 0.0625,
+          "currentEquation": "1 / 16"
+        },
+        {
+          "name": "Length",
+          "ioValue": 36,
+          "currentEquation": "36"
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-210",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-211",
+          "name": "Width"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.24615384615384617,
+          "uniqueID": "id-212",
+          "name": "Thickness"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3384615384615385,
+          "uniqueID": "id-213",
+          "name": "Length"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.1669921875,
+          "y": 0.21515561569688768,
+          "uniqueID": "id-219",
+          "name": "t - w",
+          "ioValues": [
+            {
+              "name": "t",
+              "ioValue": 1
+            },
+            {
+              "name": "w",
+              "ioValue": 0.0625
+            }
+          ],
+          "currentEquation": "t - w"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.302734375,
+          "y": 0.2679296346414073,
+          "uniqueID": "id-220",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 0.9375
+            },
+            {
+              "name": "y length",
+              "ioValue": 0.9375
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.455078125,
+          "y": 0.2327469553450609,
+          "uniqueID": "id-221",
+          "ioValues": [
+            {
+              "name": "geometry1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.5110677083333334,
+          "y": 0.4181326116373478,
+          "uniqueID": "id-222",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 36
+            }
+          ]
+        },
+        {
+          "atomType": "Add-BOM-Tag",
+          "x": 0.6826171875,
+          "y": 0.7496617050067659,
+          "uniqueID": "id-223",
+          "name": "Add BOM Tag",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Item Name",
+              "ioValue": "Steel Square Tube 3ft",
+              "currentEquation": "Square Steel Tubing (ft)"
+            },
+            {
+              "name": "Number Needed",
+              "ioValue": 1
+            },
+            {
+              "name": "Cost (USD)",
+              "ioValue": 18.75
+            },
+            {
+              "name": "Source Link",
+              "ioValue": "https://www.mcmaster.com/products/square-tubing/steel-2~/",
+              "currentEquation": "https://www.mcmaster.com/products/square-tubing/steel-2~/"
+            }
+          ],
+          "BOMitem": {
+            "BOMitemName": "Steel Square Tube 3ft",
+            "numberNeeded": 1,
+            "costUSD": 18.75,
+            "source": "https://www.mcmaster.com/products/square-tubing/steel-2~/"
+          }
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.44986979166666663,
+          "y": 0.652232746955345,
+          "uniqueID": "id-224",
+          "name": "\"Steel Square Tube \" + x + \"ft\"",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 3
+            }
+          ],
+          "currentEquation": "\"Steel Square Tube \" + x + \"ft\""
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.373046875,
+          "y": 0.6495263870094723,
+          "uniqueID": "id-225",
+          "name": "x / 12",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 36
+            }
+          ],
+          "currentEquation": "x / 12"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.43164062499999994,
+          "y": 0.8443843031123139,
+          "uniqueID": "id-226",
+          "name": "l * t * w * 100",
+          "ioValues": [
+            {
+              "name": "l",
+              "ioValue": 3
+            },
+            {
+              "name": "t",
+              "ioValue": 0.0625
+            },
+            {
+              "name": "w",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "l * t * w * 100"
+        },
+        {
+          "atomType": "Readme",
+          "x": 0.7216796875,
+          "y": 0.27604871447902574,
+          "uniqueID": "id-227",
+          "name": "README",
+          "ioValues": [
+            {
+              "name": "value",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ],
+          "readMeText": "A molecule representing square steel tubing. Price in BOM is approximate for low carbon steel.",
+          "global": true
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.33821614583333337,
+          "y": 0.44519621109607577,
+          "uniqueID": "id-214",
+          "name": "Offset_2D",
+          "ioValues": [
+            {
+              "name": "2D_Shape",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Offset",
+              "ioValue": 0.0625
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-215",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.46835443037974683,
+              "y": 0.5654596100278552,
+              "uniqueID": "id-216",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "distance",
+                  "ioValue": 0.0625
+                }
+              ],
+              "codeVersion": 1,
+              "code": "const Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"distance\", type: \"number\", defaultValue: 1 },\n];\n\nreturn await AssemblyMap(library[shape], async (leaf) => {\n  const drawing = leaf.geometry[0];\n  return {\n    ...leaf,\n    geometry: [drawing.offset(distance)]\n  };\n});\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-217",
+              "name": "2D_Shape",
+              "type": "geometry"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-218",
+              "name": "Offset"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-216",
+              "ap2ID": "id-215"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-217",
+              "ap2ID": "id-216"
+            },
+            {
+              "ap2Name": "distance",
+              "ap1ID": "id-218",
+              "ap2ID": "id-216"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-04-27T02:23:39.213Z",
+            "privateRepo": false,
+            "repoName": "Offset_2D",
+            "dateCreated": "2026-03-27T21:44:37Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Offset_2D/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-631",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Offset_2D",
+            "topics": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739702",
+            "ranking": 0.9,
+            "searchField": "offset_2d barboursmith takes an input 2d shape and offsets from it to produce a new 2d shape which is larger or smaller ",
+            "owner": "BarbourSmith",
+            "description": "Takes an input 2D shape and offsets from it to produce a new 2D shape which is larger or smaller",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Offset_2D/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Offset_2D/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "t",
+          "ap1ID": "id-211",
+          "ap2ID": "id-219"
+        },
+        {
+          "ap2Name": "w",
+          "ap1ID": "id-211",
+          "ap2ID": "id-226"
+        },
+        {
+          "ap2Name": "Offset",
+          "ap1ID": "id-212",
+          "ap2ID": "id-214"
+        },
+        {
+          "ap2Name": "w",
+          "ap1ID": "id-212",
+          "ap2ID": "id-219"
+        },
+        {
+          "ap2Name": "t",
+          "ap1ID": "id-212",
+          "ap2ID": "id-226"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-213",
+          "ap2ID": "id-222"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-213",
+          "ap2ID": "id-225"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-219",
+          "ap2ID": "id-220"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-219",
+          "ap2ID": "id-220"
+        },
+        {
+          "ap2Name": "2D_Shape",
+          "ap1ID": "id-220",
+          "ap2ID": "id-214"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-220",
+          "ap2ID": "id-221"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-221",
+          "ap2ID": "id-222"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-222",
+          "ap2ID": "id-223"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-223",
+          "ap2ID": "id-210"
+        },
+        {
+          "ap2Name": "value",
+          "ap1ID": "id-223",
+          "ap2ID": "id-227"
+        },
+        {
+          "ap2Name": "Item Name",
+          "ap1ID": "id-224",
+          "ap2ID": "id-223"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-225",
+          "ap2ID": "id-224"
+        },
+        {
+          "ap2Name": "l",
+          "ap1ID": "id-225",
+          "ap2ID": "id-226"
+        },
+        {
+          "ap2Name": "Cost (USD)",
+          "ap1ID": "id-226",
+          "ap2ID": "id-223"
+        },
+        {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-214",
+          "ap2ID": "id-221"
+        }
+      ],
+      "parentRepo": {
+        "privateRepo": false,
+        "repoName": "Steel_Tube_-_Square",
+        "dateCreated": "2026-04-27T03:03:04Z",
+        "readMe": "https://raw.githubusercontent.com/tristan-huber/Steel_Tube_-_Square/master/README.md?sanitize=true",
+        "yyyy": 2026,
+        "topMoleculeID": "id-1",
+        "githubMoleculesUsed": [
+          {
+            "owner": "BarbourSmith",
+            "repoName": "Offset_2D"
+          }
+        ],
+        "html_url": "https://github.com/tristan-huber/Steel_Tube_-_Square",
+        "topics": [
+          "hardware"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739733",
+        "ranking": 0,
+        "searchField": "steel_tube_-_square tristan-huber square steel tubing, configurable width, thickness, length hardware",
+        "owner": "tristan-huber",
+        "description": "Square steel tubing, configurable width, thickness, length",
+        "contentURL": "https://raw.githubusercontent.com/tristan-huber/Steel_Tube_-_Square/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/tristan-huber/Steel_Tube_-_Square/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "Inches",
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -266,6 +884,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-100",
       "ap2ID": "id-154"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-100",
+      "ap2ID": "id-203"
     },
     {
       "ap2Name": "geometry",
@@ -283,9 +906,9 @@
       "ap2ID": "id-100"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "Shape 3",
       "ap1ID": "id-154",
-      "ap2ID": "id-88"
+      "ap2ID": "id-203"
     },
     {
       "ap2Name": "zDist",
@@ -298,9 +921,39 @@
       "ap2ID": "id-163"
     },
     {
+      "ap2Name": "x",
+      "ap1ID": "id-160",
+      "ap2ID": "id-189"
+    },
+    {
       "ap2Name": "geometry",
       "ap1ID": "id-163",
-      "ap2ID": "id-104"
+      "ap2ID": "id-177"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-177",
+      "ap2ID": "id-183"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-183",
+      "ap2ID": "id-193"
+    },
+    {
+      "ap2Name": "yDist",
+      "ap1ID": "id-189",
+      "ap2ID": "id-183"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-193",
+      "ap2ID": "id-203"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-203",
+      "ap2ID": "id-88"
     }
   ],
   "unitsKey": "Inches",
