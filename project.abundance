@@ -272,7 +272,8 @@
         },
         {
           "name": "yDist",
-          "ioValue": 2
+          "ioValue": 2,
+          "currentEquation": "Height / 2"
         },
         {
           "name": "zDist",
@@ -280,21 +281,6 @@
           "currentEquation": "0.25"
         }
       ]
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.11393229166666666,
-      "y": 0.058186738836265225,
-      "uniqueID": "id-189",
-      "name": "x / 2",
-      "ioValues": [
-        {
-          "name": "x",
-          "ioValue": 4,
-          "currentEquation": "1"
-        }
-      ],
-      "currentEquation": "x / 2"
     },
     {
       "atomType": "Extrude",
@@ -911,13 +897,21 @@
         {
           "name": "Shape 2",
           "ioValue": null
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 4",
+          "ioValue": null
         }
       ]
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.52734375,
-      "y": 0.18538565629228687,
+      "x": 0.49414062500000006,
+      "y": 0.24898511502029771,
       "uniqueID": "id-389",
       "name": "-6-Wood-Screw-inches",
       "ioValues": [
@@ -1241,14 +1235,15 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.7578125,
-      "y": 0.1935047361299053,
+      "x": 0.6653645833333334,
+      "y": 0.10554803788903924,
       "uniqueID": "id-436",
       "name": "Linear-Pattern",
       "ioValues": [
         {
           "name": "Number",
-          "ioValue": 2
+          "ioValue": 2,
+          "currentEquation": "2"
         },
         {
           "name": "Geometry",
@@ -1265,8 +1260,8 @@
         },
         {
           "name": "distZ",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 2,
+          "currentEquation": "Height / 2"
         }
       ],
       "topLevel": false,
@@ -1339,7 +1334,7 @@
             },
             {
               "name": "distZ",
-              "ioValue": 0
+              "ioValue": 2
             }
           ],
           "codeVersion": 1,
@@ -1503,8 +1498,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.6552734375,
-      "y": 0.18132611637347767,
+      "x": 0.5709635416666666,
+      "y": 0.17997293640054127,
       "uniqueID": "id-470",
       "ioValues": [
         {
@@ -1522,6 +1517,59 @@
         },
         {
           "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.759765625,
+      "y": 0.18267929634641408,
+      "uniqueID": "id-482",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 1,
+          "currentEquation": "1"
+        },
+        {
+          "name": "yDist",
+          "ioValue": -0.25,
+          "currentEquation": "-.25"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 1,
+          "currentEquation": "Height / 4"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.8567708333333334,
+      "y": 0.18673883626522328,
+      "uniqueID": "id-488",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -2,
+          "currentEquation": "-2"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
           "ioValue": 0
         }
       ]
@@ -1574,11 +1622,6 @@
       "ap2ID": "id-163"
     },
     {
-      "ap2Name": "x",
-      "ap1ID": "id-160",
-      "ap2ID": "id-189"
-    },
-    {
       "ap2Name": "geometry",
       "ap1ID": "id-163",
       "ap2ID": "id-177"
@@ -1592,11 +1635,6 @@
       "ap2Name": "geometry",
       "ap1ID": "id-183",
       "ap2ID": "id-193"
-    },
-    {
-      "ap2Name": "yDist",
-      "ap1ID": "id-189",
-      "ap2ID": "id-183"
     },
     {
       "ap2Name": "Shape 1",
@@ -1629,9 +1667,29 @@
       "ap2ID": "id-470"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-436",
+      "ap2ID": "id-482"
+    },
+    {
       "ap2Name": "Geometry",
       "ap1ID": "id-470",
       "ap2ID": "id-436"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-482",
+      "ap2ID": "id-488"
+    },
+    {
+      "ap2Name": "Shape 4",
+      "ap1ID": "id-482",
+      "ap2ID": "id-283"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-488",
+      "ap2ID": "id-283"
     }
   ],
   "unitsKey": "Inches",
