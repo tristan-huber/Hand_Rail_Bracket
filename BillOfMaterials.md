@@ -2,4 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|#6 Screw|4|$0.00||
+|Steel Square Tube 3ft|1|$18.75|https://www.mcmaster.com/products/square-tubing/steel-2~/|
+|Total: |5|$18.75| |
